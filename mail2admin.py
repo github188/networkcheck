@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 def sendmail(tolist,subject,message):
     try:
         server = smtplib.SMTP_SSL("smtp.qq.com",465)
-        server.login("335320567@qq.com","vjbohalzdchnbhfe")
+        server.login("","")
         msg = MIMEText('<html><body><h1>用户自检结果报告：</h1>' +
             '<p>%s</a></p>'%message +
             '</body></html>', 'html', 'utf-8')
